@@ -1,0 +1,8 @@
+.buttons li{
+    padding: 20px;
+    margin: 5px;
+    cursor: pointer;
+    background: red;
+    color: white;
+    display: inline-block;
+}

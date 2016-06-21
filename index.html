@@ -4,20 +4,57 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <script src="node_modules/howler/howler.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script>
+        var sound = new Howl({
+            src: ['audio/audio.mp3'],
+            sprite: {
+                datissem: [0, 1500],
+                goebezig: [1500, 1800],
+                voila: [3070, 2000],
+                wagoadedoen: [5070, 1900],
+                ow: [6970, 1500],
+                tees: [8470, 1500],
+                allegasten: [9970, 2000],
+                beast: [12000, 1800],
+                mentaal: [13800, 2000],
+                laatste: [16000, 2100],
+                burpeekes: [18100, 2800],
+                sweet: [21000, 800],
+                boemsjakalaka: [21800, 2000],
+                knallen: [23800, 3200],
+                Goee: [27000, 1500],
+                gains: [28500, 2400],
+                lach: [30900, 2400]
+            }
+        });
+
+    </script>
 </head>
 <body>
-<ul>
-    <li>DADISEM</li>
-    <li>GOE BEZIG GASTEU</li>
-    <li>VOOIIIIILA SE</li>
-    <li>WA GOADE DOEEN</li>
-    <li>O-OWW</li>
-    <li>TEES IST!</li>
-    <li>ALLE GASTEU</li>
-    <li>BEASTEE</li>
-    <li>NU IST MENTAAL</li>
-    <li></li>
-    <li></li>
+<div>
+    <p>Vergeet in de vakantie je wekelijkse wod niet.</p>
+    <p>Laat je motiveren door coach eline!</p>
+    <span>(Geluid op vollenbak)</span>
+</div>
+<ul class="buttons">
+    <li onclick="sound.play('datissem')">DADISEM</li>
+    <li onclick="sound.play('goebezig')">GOE BEZIG GASTEU</li>
+    <li onclick="sound.play('voila')">VOOIIIIILA SE</li>
+    <li onclick="sound.play('wagoadedoen')">WA GOADE DOEEN</li>
+    <li onclick="sound.play('ow')">O-OWW</li>
+    <li onclick="sound.play('tees')">TEES IST!</li>
+    <li onclick="sound.play('allegasten')">ALLE GASTEU</li>
+    <li onclick="sound.play('beast')">BEASTEE</li>
+    <li onclick="sound.play('mentaal')">NU IST MENTAAL</li>
+    <li onclick="sound.play('laatste')">'T ZIJN DE LAATSTE</li>
+    <li onclick="sound.play('burpeekes')">PAAR BURPEEKES</li>
+    <li onclick="sound.play('sweet')">SWEET</li>
+    <li onclick="sound.play('boemsjakalaka')">BOEMSJAKALAK</li>
+    <li onclick="sound.play('knallen')">EFFEKES KNALLEN</li>
+    <li onclick="sound.play('Goee')">GOOEEE</li>
+    <li onclick="sound.play('gains')">DAS VOOR DE GAINS</li>
+    <li onclick="sound.play('lach')">LACH</li>
 </ul>
 </body>
 </html>
