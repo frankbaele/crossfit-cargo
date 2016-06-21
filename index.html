@@ -33,28 +33,44 @@
 </head>
 <body>
 <div>
-    <p>Vergeet in de vakantie je wekelijkse wod niet.</p>
-    <p>Laat je motiveren door coach eline!</p>
-    <span>(Geluid op vollenbak)</span>
+    <div class="header">
+        <picture class="header-image">
+            <source
+                    media="(max-width: 650px)"
+                    srcset=img/banner_m.png>
+            <source
+                    media="(min-width: 650px)"
+                    srcset=img/banner.png>
+            <img src="img/banner.png">
+        </picture>
+    </div>
+    <div class="content">
+        <div class="banner">
+            <p>Vergeet in de vakantie je wekelijkse wod niet.</p>
+            <p>Laat je motiveren door coach eline!</p>
+            <span>(Geluid op vollenbak)</span>
+        </div>
+        <ul class="buttons">
+            <li onclick="sound.play('datissem')">DADISEM</li>
+            <li onclick="sound.play('goebezig')">GOE BEZIG GASTEU</li>
+            <li onclick="sound.play('voila')">VOOIIIIILA SE</li>
+            <li onclick="sound.play('wagoadedoen')">WA GOADE DOEEN</li>
+            <li onclick="sound.play('ow')">O-OWW</li>
+            <li onclick="sound.play('tees')">TEES IST!</li>
+            <li onclick="sound.play('allegasten')">ALLE GASTEU</li>
+            <li onclick="sound.play('beast')">BEASTEE</li>
+            <li onclick="sound.play('mentaal')">NU IST MENTAAL</li>
+            <li onclick="sound.play('laatste')">'T ZIJN DE LAATSTE</li>
+            <li onclick="sound.play('burpeekes')">PAAR BURPEEKES</li>
+            <li onclick="sound.play('sweet')">SWEET</li>
+            <li onclick="sound.play('boemsjakalaka')">BOEMSJAKALAK</li>
+            <li onclick="sound.play('knallen')">EFFEKES KNALLEN</li>
+            <li onclick="sound.play('Goee')">GOOEEE</li>
+            <li onclick="sound.play('gains')">DAS VOOR DE GAINS</li>
+            <li onclick="sound.play('lach')">LACH</li>
+        </ul>
+    </div>
+
 </div>
-<ul class="buttons">
-    <li onclick="sound.play('datissem')">DADISEM</li>
-    <li onclick="sound.play('goebezig')">GOE BEZIG GASTEU</li>
-    <li onclick="sound.play('voila')">VOOIIIIILA SE</li>
-    <li onclick="sound.play('wagoadedoen')">WA GOADE DOEEN</li>
-    <li onclick="sound.play('ow')">O-OWW</li>
-    <li onclick="sound.play('tees')">TEES IST!</li>
-    <li onclick="sound.play('allegasten')">ALLE GASTEU</li>
-    <li onclick="sound.play('beast')">BEASTEE</li>
-    <li onclick="sound.play('mentaal')">NU IST MENTAAL</li>
-    <li onclick="sound.play('laatste')">'T ZIJN DE LAATSTE</li>
-    <li onclick="sound.play('burpeekes')">PAAR BURPEEKES</li>
-    <li onclick="sound.play('sweet')">SWEET</li>
-    <li onclick="sound.play('boemsjakalaka')">BOEMSJAKALAK</li>
-    <li onclick="sound.play('knallen')">EFFEKES KNALLEN</li>
-    <li onclick="sound.play('Goee')">GOOEEE</li>
-    <li onclick="sound.play('gains')">DAS VOOR DE GAINS</li>
-    <li onclick="sound.play('lach')">LACH</li>
-</ul>
 </body>
 </html>

@@ -1,8 +1,49 @@
-.buttons li{
+html{
+    font-family: sans-serif;
+}
+img, picture {
+    max-width: 100%;
+}
+
+.header {
+    border-bottom: 5px solid #0F525A;
+}
+.header-image {
+    max-width: 960px;
+    margin: auto;
+    display: block;
+}
+
+.header-image img {
+    display: block;
+}
+.content{
+    max-width: 960px;
+    margin: auto;
+}
+.banner{
+    text-align: center;
+}
+.buttons{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap:wrap;
+}
+.buttons li {
+    text-align: center;
+    font-weight: bold;
     padding: 20px;
-    margin: 5px;
     cursor: pointer;
-    background: red;
+    background: #EB7046;
     color: white;
-    display: inline-block;
+    flex-basis: 260px;
+    flex-grow: 1;
+    margin: 5px 10px;
+    flex-shrink: 1;
+}
+
+.buttons li:hover {
+    background: #CE4B1F;
 }
