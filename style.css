@@ -1,49 +1,201 @@
-html{
-    font-family: sans-serif;
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
 }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1.35em;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+/* Don't kill focus outline for keyboard users: http://24ways.org/2009/dont-lose-your-focus */
+a:hover, a:active {
+    outline: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'DINPro';
+    src: url("../fonts/DINPro.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro.otf") format("opentype"), url("../fonts/DINPro.woff") format("woff"), url("../fonts/DINPro.ttf") format("truetype"), url("../fonts/DINPro.svg#DINPro") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'DINPro';
+    src: url("../fonts/DINPro-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro-Medium.otf") format("opentype"), url("../fonts/DINPro-Medium.woff") format("woff"), url("../fonts/DINPro-Medium.ttf") format("truetype"), url("../fonts/DINPro-Medium.svg#DINPro-Medium") format("svg");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'DINPro';
+    src: url("..fonts/DINPro-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/DINPro-Bold.otf") format("opentype"), url("../fonts/DINPro-Bold.woff") format("woff"), url("../fonts/DINPro-Bold.ttf") format("truetype"), url("../fonts/DINPro-Bold.svg#DINPro-Bold") format("svg");
+    font-weight: bold;
+    font-style: normal
+}
+
+html, button, input, select, textarea {
+    font-family: DINPro, Helvetica, Arial, sans-serif;
+    line-height: 22px
+}
+
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%
+}
+
+html, button, input, select, textarea {
+    font-family: 'DINPro', sans-serif;
+}
+
 img, picture {
     max-width: 100%;
 }
 
 .header {
-    border-bottom: 5px solid #0F525A;
+    border-bottom: 3px solid #12525a;
 }
+
+h2{
+    font-size: 20px;
+    line-height: 1.4em;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
 .header-image {
-    max-width: 960px;
+    max-height: 200px;
     margin: auto;
     display: block;
+}
+
+.header-image > * {
+    max-height: 200px;
+    margin: auto;
 }
 
 .header-image img {
     display: block;
 }
-.content{
-    max-width: 960px;
+
+.content {
+    max-width: 700px;
     margin: auto;
 }
-.banner{
+
+.banner {
+    padding: 20px;
     text-align: center;
+    color: #0f525a;
 }
-.buttons{
+
+.buttons {
     margin: 0;
     padding: 0;
     list-style: none;
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
 }
+
 .buttons li {
     text-align: center;
     font-weight: bold;
-    padding: 20px;
+    padding: 20px 20px;
     cursor: pointer;
     background: #EB7046;
     color: white;
-    flex-basis: 260px;
+    flex-basis: 150px;
     flex-grow: 1;
-    margin: 5px 10px;
+    margin: 7.5px;
     flex-shrink: 1;
 }
 
 .buttons li:hover {
     background: #CE4B1F;
+}
+.motivate{
+    color: #0f525a;
+    margin: 30px 7.5px 10px 7.5px;
+}
+.facebook{
+    width: 150px;
+    text-align: center;
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #0f525a;
+    color: white !important;
+    margin: 7.5px;
+}
+.facebook img{
+    display: inline-block;
+    height: 16px;
+    vertical-align: bottom;
+    padding-bottom: 3px;
+    padding-right: 7.5px;
+}
+.facebook a{
+    display: inline-block;
+    color: white !important;
+    text-decoration: none;
+}
+.facebook a div{
+    display: inline-block;
+}
+.facebook:hover {
+    background: #0a373c;
+}
+footer{
+    padding: 70px 0 30px 0;
+}
+footer a{
+    color: #0f525a;
+    width: 200px;
+    margin: auto;
+    display: block;
+    text-align: center;
+    text-decoration: none;
 }
