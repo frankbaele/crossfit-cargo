@@ -36,13 +36,7 @@
 </head>
 <body>
     <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+
 <div>
     <div class="header">
         <picture class="header-image">
@@ -86,12 +80,10 @@
             <li onclick="sound.play('lach')">LACH</li>
         </ul>
         <div class="motivate">Motiveer je vrienden</div>
-        <div class="facebook">.
-            <div class="fb-share-button" data-href="http://crossfitcargo.be/soundboard/" data-layout="link" data-mobile-iframe="true">
-                <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcrossfitcargo.be%2Fsoundboard%2F&amp;src=sdkpreparse">
+        <div class="facebook" data-href="http://crossfitcargo.be/soundboard/" data-layout="link" data-mobile-iframe="true">
+            <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcrossfitcargo.be%2Fsoundboard%2F&amp;src=sdkpreparse">
                 <img src="img/icon.png">
                 <div>Deel deze pagina</div></a>
-            </div>
         </div>
         <footer>
             <a href="//crossfitcargo.be">www.crossfitcargo.be</a>
