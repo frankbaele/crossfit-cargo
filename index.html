@@ -9,28 +9,43 @@
     <script src="libs/howler.min.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <script>
+        var sprite = {
+            datissem: [0, 1500],
+            goebezig: [1500, 1800],
+            voila: [3070, 2000],
+            wagoadedoen: [5070, 1900],
+            ow: [6970, 1500],
+            tees: [8470, 1500],
+            allegasten: [9970, 2000],
+            beast: [12000, 1800],
+            mentaal: [13800, 2000],
+            laatste: [16000, 2100],
+            burpeekes: [18100, 2800],
+            sweet: [21000, 800],
+            boemsjakalaka: [21800, 2000],
+            knallen: [23800, 3200],
+            Goee: [27000, 1500],
+            gains: [28500, 2400],
+            lach: [30900, 2400]
+        };
         var sound = new Howl({
             src: ['audio/audio.mp3'],
-            sprite: {
-                datissem: [0, 1500],
-                goebezig: [1500, 1800],
-                voila: [3070, 2000],
-                wagoadedoen: [5070, 1900],
-                ow: [6970, 1500],
-                tees: [8470, 1500],
-                allegasten: [9970, 2000],
-                beast: [12000, 1800],
-                mentaal: [13800, 2000],
-                laatste: [16000, 2100],
-                burpeekes: [18100, 2800],
-                sweet: [21000, 800],
-                boemsjakalaka: [21800, 2000],
-                knallen: [23800, 3200],
-                Goee: [27000, 1500],
-                gains: [28500, 2400],
-                lach: [30900, 2400]
-            }
+            sprite: sprite
         });
+        function getParameterByName(name, url) {
+            if (!url) url = window.location.href;
+            name = name.replace(/[\[\]]/g, "\\$&");
+            var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                    results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        var soundid = getParameterByName('play'); // "lorem"
+        if(sound && sprite[soundid]){
+            sound.play(soundid)
+        }
 
     </script>
 </head>
